@@ -1,4 +1,3 @@
-var searchBtn = document.getElementById("search-btn")
 var sampleData = [
     {
         "name": "testing",
@@ -39,14 +38,7 @@ function addCardHandler(data) {
         cardBody.append(cardTitle, cardText, cardBtn)
         card.appendChild(cardBody)
         card.setAttribute("class", "card");
-        console.log(card)
         cardList.append(card)
         i++
     }
-    console.log(cardList)
 }
-
-
-searchBtn.addEventListener("click", function() {
-    addCardHandler(sampleData)
-})
