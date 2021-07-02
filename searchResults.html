@@ -9,17 +9,17 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="d-flex">
-    <aside>
-        <div>
+<body class="vh-100 d-flex align-items-stretch bg-info">
+    <aside class="w-25 m-2 p-2">
+        <div class="">
             <h1>Library of Congress</h1>
             <form>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <div class="form-group m-2">
+                  <input type="search-term" class="form-control" id="" placeholder="name@example.com">
                 </div>
-                <div class="form-group">
+                <div class="form-group m-2">
                   <select class="form-control" id="exampleFormControlSelect1">
-                      <option>Select a Format</option>
+                    <option>Select a Format</option>
                     <option id="maps">Maps</option>
                     <option id="audio">Audio</option>
                     <option id="photos">Photos</option>
@@ -30,16 +30,16 @@
                     <option id="websites">Websites</option>
                   </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group m-2">
                     <button type="button" class="btn btn-primary w-100">Search</button>
                 </div>
-                <div class="form-group">
+                <div class="form-group m-2">
                   <button class="btn btn-secondary w-100"><-Go Back</button>
                 </div>
               </form>
         </div>
     </aside>
-    <main>
+    <main class="w-100 m-2 p-2 bg-light">
         <h1>Showing results</h1>
         <div id="search-results"></div>
     </main>
