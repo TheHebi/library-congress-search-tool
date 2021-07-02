@@ -1,4 +1,4 @@
-
+var searchBtn = document.getElementById("search-btn")
 var sampleData = [
     {
         "name": "testing",
@@ -44,4 +44,7 @@ function addCardHandler(data) {
     console.log(cardList)
 }
 
-addCardHandler(sampleData)
+
+searchBtn.addEventListener("click", function() {
+    addCardHandler(sampleData)
+})
