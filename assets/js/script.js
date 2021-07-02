@@ -16,6 +16,7 @@ var sampleData = [
 
 function addCardHandler(data) {
     var cardList = document.getElementById("search-results");
+    cardList.innerHTML = '';
     var i = 0
     while(i < data.length) {
         var card = document.createElement("div");
@@ -32,6 +33,7 @@ function addCardHandler(data) {
         cardText.textContent = data[i].link
         cardBtn.textContent = "link"
         cardBtn.setAttribute("href", data[i].link)
+        cardBtn.setAttribute("target", "_blank")
         console.log(data[2])
         
         cardBody.append(cardTitle, cardText, cardBtn)
